@@ -1,0 +1,14 @@
+express = require 'express'
+
+app = express()
+
+app.configure ->
+    app.use express.logger()
+    app.use express.bodyParser()
+    app.use express.static __dirname + "/.."
+
+
+app.get '/index', (request, response) ->
+    response.render '../inicio.html'
+
+app.listen 8080
