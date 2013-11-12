@@ -1,7 +1,7 @@
-<html>
+  <html>
   <head>
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="inicio.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/inicio.css" rel="stylesheet">
   </head>
   <body>
     <h1 align="center">Bienvenido :)!</h1>
@@ -9,25 +9,27 @@
       <div class="form-group">
 	<label for="usuario_form" class="col-sm-2 control-label">Usuario:</label>
 	<div class="col-sm-4">
-	  <input type="text" class="form-control" id="usuario_form" placehold="Número de cuenta">
+	  <input type="text" data-bind="value: user" class="form-control" id="usuario_form" placeholder="Número de cuenta">
 	</div>
       </div>
       <div class="form-group">
 	<label for="password_form" class="col-sm-2 control-label">Password:</label>
 	<div class="col-sm-4">
-	  <input type="text" class="form-control" id="password-form" placeolder="Password">
+	  <input type="password" data-bind="value: pass" class="form-control" id="password-form" placeholder="Contraseña">
 	</div>
       </div>
       <div class="form-group">
 	<div class="col-sm-offset-2 col-sm-3">
-	  <button class="btn btn-default">Iniciar sesion</button>
+	  <button class="btn btn-default" data-bind="click: inicio_sesion">Iniciar sesion</button>
 	</div>
 	<div class="col-sm-offset-2">
 	  <button class="btn btn-default">Registrate</button>
 	</div>
       </div>
     </form>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/knockout.js"></script>
+    <script type="text/javascript" src="../js/inicio.js"></script>
   </body>
 </html>
