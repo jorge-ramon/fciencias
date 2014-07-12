@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    link(rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css")
+    link(href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css")
+    link(href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" type="text/css" href="stylus/css/index.css")
+  body
+    main
+      section
+        article#bienvenida
+          p.titulo ¡Bienvenido a Recomendaciones FCiencias!
+        article#login
+          p.instrucciones Ingresa con tu cuenta de Facebook, ¡es rápido y sencillo!.
+          .fb-login-button(data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="false")
+        article#visita
+          p.instrucciones ¿Sólo vienes de visita? :( 
+          p.instrucciones ¡Puedes ingresar directamente a las <a class="recomendaciones">recomendaciones</a>!
+    script(type="text/javascript" src="lib/jquery-1.11.1.min.js")
+    script(type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript" src="lib/jquery.fittext.js")
+    script(type="text/javascript" src="coffee/js/index.js")
+    script(type="text/javascript" src="lib/facebook.js")
+      

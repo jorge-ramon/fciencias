@@ -1,0 +1,17 @@
+{
+    "name":"recomendaciones-fciencias",
+    "version":"0.0.1",
+    "description":"Página para la recomendacion de profesores de la Facultad de Ciencias",
+    "author":"Jorge Ramón <jorge.ramon@grupojaque.com>",
+    "repository":{
+	"type":"git",
+	"url":"https://github.com/jorge-ramon/fciencias.git"
+    },
+    "dependencies":{
+	"jade":"*",
+	"stylus":"*",
+	"express":"4.x",
+	"body-parser":"*",
+	"mongodb":"*"
+    }
+}

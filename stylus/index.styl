@@ -1,0 +1,41 @@
+html, body
+  margin 0
+
+main
+  width 100%
+  margin-top 20px
+
+p.titulo
+  text-align center
+  font-family 'Lobster',cursive
+
+p.instrucciones
+  text-align center
+  font-family 'Roboto Slab', serif;
+
+.fb-login-button
+  margin-left calc((100% - 200px)/2)
+
+#login, #visita
+  margin-top 5%
+
+.recomendaciones:hover
+  cursor pointer
+  text-decoration none
+
+/* Media Queries */
+@media screen and (max-width: 1366px)
+  p.titulo
+    font-size 65px
+  p.instrucciones
+    font-size 30px
+
+@media screen and (max-width: 768px)
+  p.titulo
+    font-size 55px
+  p.instrucciones
+    font-size 25px
+
+@media screen and (max-width: 320px)
+  p.titulo
+    font-size 35px
